@@ -1,4 +1,4 @@
-from langchain.prompts import ChatPromptTemplate
+from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.document_loaders import UnstructuredFileLoader
 from langchain.embeddings import CacheBackedEmbeddings, OpenAIEmbeddings
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
@@ -7,6 +7,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores.faiss import FAISS
 from langchain.chat_models import ChatOpenAI
 from langchain.callbacks.base import BaseCallbackHandler
+from langchain.memory import ConversationBufferMemory
 import streamlit as st
 
 st.set_page_config(
@@ -37,6 +38,14 @@ llm = ChatOpenAI(
     ]
 )
 
+if "memory" not in st.session_state:
+    st.session_state["memory"] = ConversationBufferMemory(return_messages=True)
+memory = st.session_state["memory"]
+
+
+def load_memory(_):
+    return memory.load_memory_variables({})["history"]
+
 
 @st.cache_data(show_spinner="Embedding file...")
 def embed_file(file):
@@ -61,6 +70,10 @@ def embed_file(file):
 
 def save_message(message, role):
     st.session_state["messages"].append({"message": message, "role": role})
+    if role == "human":
+        memory.save_context({"input": message}, {"output": ""})
+    elif role == "ai":
+        memory.save_context({"input": ""}, {"output": message})
 
 
 def send_message(message, role, save=True):
@@ -93,6 +106,7 @@ prompt = ChatPromptTemplate.from_messages(
             Context: {context}
             """,
         ),
+        MessagesPlaceholder(variable_name="history"),
         ("human", "{question}"),
     ]
 )
@@ -127,6 +141,7 @@ if file:
             {
                 "context": retriever | RunnableLambda(format_docs),
                 "question": RunnablePassthrough(),
+                "history": RunnableLambda(load_memory),
             }
             | prompt
             | llm
