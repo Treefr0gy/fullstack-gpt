@@ -29,16 +29,6 @@ class ChatCallbackHandler(BaseCallbackHandler):
         self.message_box.markdown(self.message)
 
 
-llm = ChatOllama(
-    model="mistral:latest",
-    temperature=0.1,
-    streaming=True,
-    callbacks=[
-        ChatCallbackHandler(),
-    ]
-)
-
-
 @st.cache_data(show_spinner="Embedding file...")
 def embed_file(file):
     file_content = file.read()
@@ -110,6 +100,23 @@ with st.sidebar:
         "Upload a .txt .pdf or .docx file",
         type=["pdf", "txt", "docx"],
     )
+    choice = st.selectbox(
+        "Choose what you want to use.",
+        (
+            "mistral",
+            "falcon",
+        ),
+    )
+    st.session_state["model"] = choice
+
+llm = ChatOllama(
+    model=f"{st.session_state['model']}:latest",
+    temperature=0.1,
+    streaming=True,
+    callbacks=[
+        ChatCallbackHandler(),
+    ]
+)
 
 if file:
     retriever = embed_file(file)
