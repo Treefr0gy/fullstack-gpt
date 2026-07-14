@@ -13,6 +13,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import StrOutputParser
 from langchain.vectorstores.faiss import FAISS
 from langchain.embeddings import CacheBackedEmbeddings, OpenAIEmbeddings
+from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 
 llm = ChatOpenAI(
     temperature=0.1,
@@ -88,6 +89,10 @@ def cut_audio_in_chunks(audio_path, chunk_size, chunks_folder):
             f"./{chunks_folder}/chunk_{i}.mp3",
             format="mp3",
         )
+
+
+def format_docs(docs):
+    return "\n\n".join(document.page_content for document in docs)
 
 
 st.set_page_config(
@@ -190,6 +195,25 @@ if video:
     with qa_tab:
         retriever = embed_file(transcript_path)
 
-        docs = retriever.invoke("do they talk about marcus aurelius?")
+        question = st.text_input("Ask anything about your file...")
+        if question:
+            stuff_prompt = ChatPromptTemplate.from_template(
+                """Answer the question using ONLY the following context and not your training data. If you don't know the answer just say you don't know. DON'T make anything up.
+                
+                Context: {context}
+                Question: {question}
+                """
+            )
 
-        st.write(docs)
+            stuff_chain = (
+                {
+                    "context": retriever | RunnableLambda(format_docs),
+                    "question": RunnablePassthrough(),
+                }
+                | stuff_prompt
+                | llm
+            )
+
+            response = stuff_chain.invoke(question).content
+
+            st.write(response)
