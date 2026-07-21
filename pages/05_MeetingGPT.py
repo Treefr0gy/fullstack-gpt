@@ -51,11 +51,13 @@ def transcribe_chunks(chunk_folder, destination):
     files.sort()
     for file in files:
         with open(file, "rb") as audio_file, open(destination, "a") as text_file:
-            transcript = openai.Audio.transcribe(
-                "whisper-1",
-                audio_file,
+            client = openai.OpenAI()
+
+            transcript = client.audio.transcriptions.create(
+                model="whisper-1",
+                file=audio_file,
             )
-            text_file.write(transcript["text"])
+            text_file.write(transcript.text)
 
 
 @st.cache_data()
