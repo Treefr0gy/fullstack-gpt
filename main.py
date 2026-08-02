@@ -1,12 +1,15 @@
-from typing import Any, Dict
-from fastapi import Body, FastAPI, Form, Request
+from typing import Annotated, Any, Dict
+from fastapi import Body, Depends, FastAPI, Form, Request
 from fastapi.responses import HTMLResponse
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 from pinecone import Pinecone
 import os
 from langchain_openai import OpenAIEmbeddings
 from langchain_pinecone import PineconeVectorStore
+
+security = HTTPBearer()
 
 load_dotenv()
 
@@ -82,3 +85,33 @@ def handle_token(code=Form(...)):
     return {
         "access_token": user_token_db[code],
     }
+
+
+user_favorites_db = {}
+
+
+def get_current_user(credentials: Annotated[HTTPAuthorizationCredentials, Depends(security)]):
+    return credentials.credentials
+
+
+@app.post(
+    "/favorites",
+    openapi_extra={
+        "x-openai-isConsequential": False,
+    },
+)
+def add_favorite(document: Document, user: str = Depends(get_current_user)):
+    user_favorites_db.setdefault(user, [])
+    user_favorites_db[user].append(document)
+    return {"ok": True}
+
+
+@app.get(
+    "/favorites",
+    response_model=list[Document],
+    openapi_extra={
+        "x-openai-isConsequential": False,
+    },
+)
+def list_favorites(user: str = Depends(get_current_user)):
+    return user_favorites_db.get(user, [])
