@@ -21,8 +21,8 @@ class StockMarketSymbolSearchToolArgsSchema(BaseModel):
 
 
 class StockMarketSymbolSearchTool(BaseTool):
-    name = "StockMarketSymbolSearchTool"
-    description = """
+    name: str = "StockMarketSymbolSearchTool"
+    description: str = """
     Use this tool to find the stock market symbol for a company.
     It takes a query as an argument.
     
@@ -43,8 +43,8 @@ class CompanyOverviewArgsSchema(BaseModel):
 
 
 class CompanyOverviewTool(BaseTool):
-    name = "CompanyOverview"
-    description = """
+    name: str = "CompanyOverview"
+    description: str = """
     Use this to get an overview of the financials of the company.
     You should enter a stock symbol.
     """
@@ -58,8 +58,8 @@ class CompanyOverviewTool(BaseTool):
 
 
 class CompanyIncomeStatementTool(BaseTool):
-    name = "CompanyIncomeStatement"
-    description = """
+    name: str = "CompanyIncomeStatement"
+    description: str = """
     Use this to get the income statement of a company.
     You should enter a stock symbol.
     """
@@ -73,8 +73,8 @@ class CompanyIncomeStatementTool(BaseTool):
 
 
 class CompanyStockPerformanceTool(BaseTool):
-    name = "CompanyStockPerformance"
-    description = """
+    name: str = "CompanyStockPerformance"
+    description: str = """
     Use this to get the weekly performance of a company stock.
     You should enter a stock symbol.
     """
