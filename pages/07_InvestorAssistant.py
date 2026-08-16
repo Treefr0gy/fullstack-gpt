@@ -79,26 +79,24 @@ def submit_tool_outputs(run_id, thread_id):
     )
 
 
-def wait_on_run(run, thread):
+def wait_on_run(run_id, thread_id):
+    run = get_run(run_id, thread_id)
     while run.status == "queued" or run.status == "in_progress":
-        run = client.beta.threads.runs.retrieve(
-            thread_id=thread.id,
-            run_id=run.id,
-        )
+        run = get_run(run_id, thread_id)
         time.sleep(0.5)
     return run
 
 
 st.set_page_config(
-    page_title="AssistantsAPI",
+    page_title="InvestorAssistant",
     page_icon="💼",
 )
 
 st.markdown(
     """
-    # AssistantsAPI
+    # InvestorAssistant
 
-    Welcome to AssistantsAPI.
+    Welcome to InvestorAssistant.
 """
 )
 
@@ -117,9 +115,9 @@ if message_content:
         thread_id=thread.id,
         assistant_id=assistant_id,
     )
-    run = wait_on_run(run, thread)
+    run = wait_on_run(run.id, thread.id)
     while run.status == "requires_action":
         run = submit_tool_outputs(run.id, thread.id)
-        run = wait_on_run(run, thread)
+        run = wait_on_run(run.id, thread.id)
     result = get_messages(thread.id)[-1].content[0].text.value
     st.write(result.replace("$", "\$"))

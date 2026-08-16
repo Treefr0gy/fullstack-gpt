@@ -19,6 +19,7 @@ Here are the apps I made:
 - [x] [🖥️ SiteGPT](/SiteGPT)
 - [x] [💼 MeetingGPT](/MeetingGPT)
 - [x] [📈 InvestorGPT](/InvestorGPT)
-- [x] [📈 AssistantsAPI](/AssistantsAPI)
+- [x] [📈 InvestorAssistant](/InvestorAssistant)
+- [x] [📃 BookAssistant](/BookAssistant)
 """
 )
