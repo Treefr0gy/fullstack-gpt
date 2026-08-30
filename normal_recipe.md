@@ -1,79 +1,79 @@
 **Greek Dinner Menu for 5 People**
 
-**1. Main Course: Moussaka**
+**1. Greek Salad**
 
-**Ingredients:**
-- 2 large eggplants, sliced into 1/4-inch rounds
-- 1/4 cup olive oil
-- Salt, to taste
-- 1 lb ground lamb or beef
-- 1 large onion, finely chopped
-- 2 cloves garlic, minced
-- 1 can (14 oz) crushed tomatoes
-- 2 tbsp tomato paste
-- 1/2 tsp ground cinnamon
-- 1/2 tsp ground allspice
-- 1/2 cup red wine
-- Salt and pepper, to taste
-- 1/2 cup grated Parmesan cheese
-- 2 cups béchamel sauce (store-bought or homemade)
+*Ingredients:*
+- Cherry tomatoes: 2 cups, halved
+- Cucumber: 1 large, diced
+- Bell peppers: 1 each of red, yellow, and green, diced
+- Red onion: 1 small, thinly sliced
+- Arugula or spinach: 2 cups
+- Reduced-fat feta cheese or crumbled tofu: 1 cup
+- Sunflower seeds or chopped walnuts: 1/2 cup
 
-**Preparation Instructions:**
-1. Preheat your oven to 400°F (200°C).
-2. Brush the eggplant slices with olive oil, sprinkle with salt, and place them on a baking sheet. Bake for 20 minutes until tender, turning once halfway through.
-3. In a large skillet, heat a bit of olive oil over medium heat. Add the onion and garlic, sauté until translucent.
-4. Add the ground meat to the skillet, cook until browned. Drain excess fat.
-5. Stir in the crushed tomatoes, tomato paste, red wine, cinnamon, allspice, salt, and pepper. Let simmer for about 20 minutes until thickened.
-6. In a baking dish, layer half of the eggplant slices, top with the meat mixture, then the remaining eggplant slices. Pour the béchamel sauce over the top and sprinkle with Parmesan cheese.
-7. Bake in the preheated oven for 25-30 minutes until the top is golden brown and bubbly.
-8. Allow the moussaka to cool for 10 minutes before serving.
+*Dressing:*
+- Extra virgin olive oil: 1/4 cup
+- Lemon juice: 2 tablespoons
+- Balsamic vinegar: 1 tablespoon
+- Dried oregano: 1 teaspoon
+- Dried basil: 1 teaspoon
 
-**2. Side Dish: Greek Salad**
+*Preparation:*
+1. In a large bowl, combine the cherry tomatoes, cucumber, bell peppers, red onion, and greens.
+2. In a small bowl, whisk together olive oil, lemon juice, balsamic vinegar, oregano, and basil.
+3. Pour the dressing over the salad and toss to combine.
+4. Top with feta cheese or tofu and sunflower seeds or walnuts just before serving.
 
-**Ingredients:**
-- 2 cups cherry tomatoes, halved
-- 1 cucumber, diced
-- 1 green bell pepper, sliced
-- 1 red onion, thinly sliced
-- 1/2 cup Kalamata olives
-- 1/2 cup feta cheese, crumbled
-- 1/4 cup olive oil
-- 1 tbsp red wine vinegar
-- 1 tsp dried oregano
-- Salt and pepper, to taste
+**2. Vegetarian Moussaka**
 
-**Preparation Instructions:**
-1. In a large bowl, combine cherry tomatoes, cucumber, green bell pepper, red onion, and olives.
-2. In a small bowl, whisk together olive oil, red wine vinegar, oregano, salt, and pepper.
-3. Drizzle the dressing over the salad and toss gently.
-4. Top with crumbled feta cheese before serving.
+*Ingredients:*
+- Eggplant: 2 large, sliced into 1/4-inch rounds
+- Lentils: 1 cup, cooked
+- Mushrooms: 1 cup, finely chopped
+- Zucchini: 2, sliced thinly
+- Onion: 1 large, chopped
+- Garlic: 3 cloves, minced
+- Ground cinnamon: 1/2 teaspoon
+- Ground nutmeg: 1/2 teaspoon
+- Olive oil: 2 tablespoons
 
-**3. Dessert: Baklava**
+*Bechamel Sauce:*
+- Plant-based milk (almond or oat): 2 cups
+- Olive oil: 1/4 cup
+- Whole wheat flour: 1/4 cup
+- Nutritional yeast: 1/4 cup
 
-**Ingredients:**
-- 1 package (16 oz) phyllo dough
-- 1 cup unsalted butter, melted
-- 2 cups walnuts, finely chopped
-- 1 tsp ground cinnamon
-- 1 cup sugar
-- 1 cup water
-- 1/2 cup honey
-- 1 tsp vanilla extract
-- 1 tsp grated lemon zest
+*Preparation:*
+1. Preheat oven to 375°F (190°C). Arrange eggplant slices on a baking sheet, drizzle with olive oil, and bake for 20 minutes or until tender.
+2. In a skillet, sauté onion and garlic in olive oil until softened. Add mushrooms, lentils, cinnamon, and nutmeg. Cook until mushrooms are tender.
+3. For the bechamel sauce, heat olive oil in a saucepan, add flour, and stir until smooth. Gradually whisk in plant-based milk and nutritional yeast, cooking until thickened.
+4. In a baking dish, layer eggplant, zucchini, and lentil mixture. Repeat layers and top with bechamel sauce.
+5. Bake for 30-40 minutes or until golden on top.
 
-**Preparation Instructions:**
-1. Preheat oven to 350°F (175°C).
-2. Butter a 9x13 inch baking dish. Place 2 sheets of phyllo dough in the dish, brush with melted butter. Repeat until you have 8 sheets layered.
-3. Mix walnuts and cinnamon, sprinkle a thin layer over the phyllo.
-4. Add 2 more sheets of phyllo, butter, and walnuts, repeating until all ingredients are used, ending with 8 layers of phyllo.
-5. Using a sharp knife, cut into diamond or square shapes all the way to the bottom of the dish.
-6. Bake for 50 minutes until golden and crisp.
-7. While baking, combine sugar, water, honey, vanilla extract, and lemon zest in a saucepan over medium heat. Bring to a boil, reduce heat, and simmer for 20 minutes.
-8. Remove baklava from oven and immediately spoon the syrup over it. Let cool and serve.
+**3. Baklava**
+
+*Ingredients:*
+- Whole-wheat phyllo dough: 1 package
+- Walnuts, almonds, and pistachios: 2 cups, chopped
+- Ground cinnamon: 1 teaspoon
+- Ground nutmeg: 1/2 teaspoon
+- Maple syrup or honey: 1/4 cup
+
+*Syrup:*
+- Water: 1/2 cup
+- Honey or maple syrup: 1/4 cup
+- Lemon zest: 1 tablespoon
+- Whole cloves: 4
+- Ground cardamom: 1/2 teaspoon
+
+*Preparation:*
+1. Preheat oven to 350°F (175°C). Grease a baking dish and layer half the phyllo sheets, brushing each with a small amount of olive oil.
+2. Combine nuts, cinnamon, and nutmeg. Spread evenly over phyllo layers.
+3. Layer remaining phyllo sheets on top, brushing each with olive oil. Cut into squares or diamond shapes before baking.
+4. Bake for 30-35 minutes until golden brown.
+5. For the syrup, simmer water, honey or maple syrup, lemon zest, cloves, and cardamom for 10 minutes. Pour over hot baklava and let soak before serving.
 
 **Serving Suggestions:**
-- Serve the moussaka hot, with a side of Greek salad for a refreshing contrast.
-- Present the baklava on a decorative plate with a sprinkle of additional chopped walnuts or a dollop of whipped cream for an elegant touch.
-- Pair the meal with a nice Greek wine such as Assyrtiko or a non-alcoholic option like sparkling water with a slice of lemon.
-
-Enjoy your delicious Greek dinner!
+- Serve the Greek salad chilled as a refreshing starter.
+- Pair the vegetarian moussaka with a side of warm crusty bread.
+- End the meal with baklava, serving warm or at room temperature with a cup of Greek coffee.
